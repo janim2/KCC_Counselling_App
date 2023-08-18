@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:kcc/core/utils/colors.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/counsellors.dart';
+import 'package:kcc/src/features/dashboard/presentation/views/events.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/faq.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/home.dart';
 
@@ -21,7 +22,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     const HomeScreen(),
     const CounsellorsScreen(),
     const FAQScreen(),
-    const HomeScreen()
+    const EventScreen()
   ];
 
   void _onTabTapped(int index) {
