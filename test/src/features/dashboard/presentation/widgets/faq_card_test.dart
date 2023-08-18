@@ -6,12 +6,13 @@ import 'package:kcc/src/features/initial/presentation/widgets/circular_structure
 void main() {
   testWidgets('FAQCard displays correctly', (WidgetTester tester) async {
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
           body: FAQCard(
             image: 'assets/images/broken_heart.png',
             name: 'Frequently Asked Questions',
             address: 'Got questions? We have answers!',
+            action: () {},
           ),
         ),
       ),

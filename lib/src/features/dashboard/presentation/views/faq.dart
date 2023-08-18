@@ -1,6 +1,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:kcc/core/utils/colors.dart';
 import 'package:kcc/src/features/dashboard/presentation/widgets/faq_card.dart';
 
@@ -46,26 +47,38 @@ class _FAQScreenState extends State<FAQScreen> {
                   margin: const EdgeInsets.all(8),
                   height: MediaQuery.of(context).size.height - 300,
                   child: ListView(
-                    children: const [
+                    children: [
                       FAQCard(
                         image: 'assets/images/study_tips.png',
                         name: 'STUDY TIPS',
                         address: '5 MINS READ',
+                        action: () {
+                          context.push("/faq_details/${"STUDY"}");
+                        },
                       ),
                       FAQCard(
                         image: 'assets/images/anxiety.png',
                         name: 'ANXIETY',
                         address: '15 MINS READ',
+                        action: () {
+                          context.push("/faq_details/${"ANXIETY"}");
+                        },
                       ),
                       FAQCard(
                         image: 'assets/images/suicide.png',
                         name: 'SUICIDE',
                         address: '15 MINS READ',
+                        action: () {
+                          context.push("/faq_details/${"SUICIDE"}");
+                        },
                       ),
                       FAQCard(
                         image: 'assets/images/broken_heart.png',
                         name: 'HEART BREAK',
                         address: '15 MINS READ',
+                        action: () {
+                          context.push("/faq_details/${"HEART BREAK"}");
+                        },
                       ),
                     ],
                   ),

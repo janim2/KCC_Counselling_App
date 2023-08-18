@@ -4,8 +4,9 @@ import 'package:kcc/src/features/initial/presentation/widgets/circular_structure
 
 class CounsellorInfoCard extends StatelessWidget {
   // ignore: inference_failure_on_uninitialized_variable
-  // final action;
+  // final void action;
   final Color? theColor;
+  final Color? textColor;
   final String? image;
   final String? name;
   final String? position;
@@ -16,6 +17,7 @@ class CounsellorInfoCard extends StatelessWidget {
     super.key,
     // this.action,
     this.theColor = TheColors.darkYellow,
+    this.textColor = TheColors.white,
     this.image,
     this.name,
     this.position,
@@ -24,83 +26,81 @@ class CounsellorInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      child: CircularStructureWithWidgetsInside(
-        theColor: TheColors.darkYellow,
-        widget: Row(
-          children: [
-            Container(
-              height: 110,
-              width: 100,
-              padding: const EdgeInsets.all(18),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(image!),
-                ),
-                color: theColor,
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(50),
-                ),
-                border: Border.all(color: TheColors.goldenYellow),
+    return CircularStructureWithWidgetsInside(
+      theColor: theColor,
+      widget: Row(
+        children: [
+          Container(
+            height: 110,
+            width: 100,
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(image!),
+              ),
+              color: theColor,
+              borderRadius: const BorderRadius.all(
+                Radius.circular(50),
+              ),
+              border: Border.all(color: TheColors.goldenYellow),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(18),
+            child: SizedBox(
+              width: 190,
+              child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      name!,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontFamily: 'ChamLimp',
+                        color: textColor,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      position!,
+                      overflow: TextOverflow.ellipsis,
+                      textAlign: TextAlign.start,
+                      style: TextStyle(
+                        fontFamily: 'ChamLimp',
+                        color: textColor,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Divider(
+                    height: 5,
+                    color: TheColors.white,
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      address!,
+                      textAlign: TextAlign.start,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontFamily: 'ChamLimp',
+                        color: textColor,
+                        fontSize: 11,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(18),
-              child: SizedBox(
-                width: 190,
-                child: Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        name!,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          fontFamily: 'ChamLimp',
-                          color: TheColors.white,
-                          fontSize: 13,
-                        ),
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        position!,
-                        overflow: TextOverflow.ellipsis,
-                        textAlign: TextAlign.start,
-                        style: const TextStyle(
-                          fontFamily: 'ChamLimp',
-                          color: TheColors.white,
-                          fontSize: 13,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Divider(
-                      height: 5,
-                      color: TheColors.white,
-                    ),
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        address!,
-                        textAlign: TextAlign.start,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          fontFamily: 'ChamLimp',
-                          color: TheColors.white,
-                          fontSize: 11,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

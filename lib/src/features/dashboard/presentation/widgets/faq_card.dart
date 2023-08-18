@@ -4,7 +4,7 @@ import 'package:kcc/src/features/initial/presentation/widgets/circular_structure
 
 class FAQCard extends StatelessWidget {
   // ignore: inference_failure_on_uninitialized_variable
-  // final action;
+  final VoidCallback action;
   final Color? theColor;
   final String? image;
   final String? name;
@@ -12,8 +12,8 @@ class FAQCard extends StatelessWidget {
 
   // ignore: sort_constructors_first
   const FAQCard({
+    required this.action,
     super.key,
-    // this.action,
     this.theColor = TheColors.darkYellow,
     this.image,
     this.name,
@@ -23,6 +23,7 @@ class FAQCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: action,
       child: CircularStructureWithWidgetsInside(
         theColor: TheColors.darkYellow,
         widget: Row(
