@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:kcc/core/utils/colors.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/counsellors.dart';
+import 'package:kcc/src/features/dashboard/presentation/views/faq.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/home.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   final List<Widget> _pages = [
     const HomeScreen(),
     const CounsellorsScreen(),
-    const HomeScreen(),
+    const FAQScreen(),
     const HomeScreen()
   ];
 

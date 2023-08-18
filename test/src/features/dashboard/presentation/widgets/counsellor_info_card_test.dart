@@ -26,8 +26,9 @@ void main() {
     expect(find.text('MRS. BERNICE S. OFOSUHENE PEASAH'), findsOneWidget);
     expect(find.text('SENIOR COUNSELLOR'), findsOneWidget);
     expect(
-        find.text('DEPT: KNUST COUNSELLING CENTER,\nKNUST COUNSELLING CENTER'),
-        findsOneWidget,);
+      find.text('DEPT: KNUST COUNSELLING CENTER,\nKNUST COUNSELLING CENTER'),
+      findsOneWidget,
+    );
     // expect(find.byType(Image), findsOneWidget);
     expect(find.byType(CircularStructureWithWidgetsInside), findsOneWidget);
     expect(find.byType(Container), findsNWidgets(3));
