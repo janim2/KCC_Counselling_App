@@ -18,7 +18,7 @@ class CircularStructureWithWidgetsInside extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
-        margin: const EdgeInsets.only(left: 13, bottom: 12),
+        margin: const EdgeInsets.only(left: 13, bottom: 12, right: 13),
         padding: const EdgeInsets.all(9),
         decoration: BoxDecoration(
           color: theColor,
