@@ -10,6 +10,15 @@ My new Flutter app
 
 ---
 
+## Screenshots
+<img src="screenshots/m1.png" width="40%"><img src="screenshots/m2.png" width="40%">
+<img src="screenshots/m3.png" width="40%"><img src="screenshots/m4.png" width="40%">
+<img src="screenshots/m5.png" width="40%"><img src="screenshots/m6.png" width="40%">
+<img src="screenshots/m7.png" width="40%"><img src="screenshots/m8.png" width="40%">
+
+---
+
+
 ## Getting Started 🚀
 
 This project contains 3 flavors:
