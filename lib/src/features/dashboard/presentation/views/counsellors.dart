@@ -37,7 +37,7 @@ class _CounsellorsScreenState extends State<CounsellorsScreen> {
                       'COUNSELLOR PROFILES',
                       style: TextStyle(
                         fontFamily: 'LemonMilk',
-                        fontSize: 30,
+                        fontSize: 28,
                         color: TheColors.black,
                       ),
                     ),
@@ -45,7 +45,7 @@ class _CounsellorsScreenState extends State<CounsellorsScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(8),
-                  height: MediaQuery.of(context).size.height - 300,
+                  height: MediaQuery.of(context).size.height - 210,
                   child: ListView(
                     children: [
                       GestureDetector(

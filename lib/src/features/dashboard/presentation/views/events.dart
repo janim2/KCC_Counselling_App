@@ -44,7 +44,7 @@ class _EventScreenState extends State<EventScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(18),
-                  height: MediaQuery.of(context).size.height - 300,
+                  height: MediaQuery.of(context).size.height - 275,
                   child: ListView(
                     children: const [
                       TitleTextCard(

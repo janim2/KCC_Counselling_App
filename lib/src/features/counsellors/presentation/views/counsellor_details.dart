@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kcc/core/utils/colors.dart';
+import 'package:kcc/src/features/counsellors/presentation/widgets/back_button.dart';
 import 'package:kcc/src/features/dashboard/presentation/widgets/counsellor_info_card.dart';
 import 'package:kcc/src/features/initial/presentation/widgets/circular_structure_with_widgets.dart';
 
@@ -86,10 +87,10 @@ class _CounsellorDetailsScreenState extends State<CounsellorDetailsScreen> {
           SafeArea(
             child: Column(
               children: [
-                const BackButton(),
+                const Align(
+                    alignment: Alignment.centerLeft, child: theBackButton()),
                 Container(
-                  margin: const EdgeInsets.all(8),
-                  height: MediaQuery.of(context).size.height - 180,
+                  height: MediaQuery.of(context).size.height - 90,
                   child: ListView(
                     children: [
                       CounsellorInfoCard(

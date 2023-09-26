@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       'WELCOME !',
                       style: TextStyle(
                         fontFamily: 'LemonMilk',
-                        fontSize: 30,
+                        fontSize: 28,
                         color: TheColors.black,
                       ),
                     ),
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 Container(
                   margin: const EdgeInsets.all(18),
-                  height: MediaQuery.of(context).size.height - 300,
+                  height: MediaQuery.of(context).size.height - 240,
                   child: ListView(
                     children: const [
                       CircularStructureWithWidgetsInside(

@@ -37,7 +37,7 @@ class _FAQScreenState extends State<FAQScreen> {
                       'FREQUENTLY ASKED QUESTIONS',
                       style: TextStyle(
                         fontFamily: 'LemonMilk',
-                        fontSize: 30,
+                        fontSize: 28,
                         color: TheColors.black,
                       ),
                     ),
@@ -45,7 +45,7 @@ class _FAQScreenState extends State<FAQScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(8),
-                  height: MediaQuery.of(context).size.height - 300,
+                  height: MediaQuery.of(context).size.height - 250,
                   child: ListView(
                     children: [
                       FAQCard(

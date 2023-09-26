@@ -75,7 +75,7 @@ class _FAQDetailsScreenState extends State<FAQDetailsScreen> {
                 ),
                 SizedBox(
                   // margin: const EdgeInsets.all(8),
-                  height: MediaQuery.of(context).size.height - 135,
+                  height: MediaQuery.of(context).size.height - 80,
                   child: ListView(
                     children: [
                       CircularStructureWithWidgetsInside(

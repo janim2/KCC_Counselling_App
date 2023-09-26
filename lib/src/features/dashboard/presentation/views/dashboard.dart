@@ -7,6 +7,7 @@ import 'package:kcc/src/features/dashboard/presentation/views/counsellors.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/events.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/faq.dart';
 import 'package:kcc/src/features/dashboard/presentation/views/home.dart';
+import 'package:unicons/unicons.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -59,7 +60,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: const Padding(
                 padding: EdgeInsets.all(5),
                 child: Icon(
-                  Icons.home_filled,
+                  UniconsLine.home_alt,
                   size: 32,
                   color: TheColors.white,
                 ),
@@ -72,8 +73,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: const Padding(
                 padding: EdgeInsets.all(5),
                 child: Icon(
-                  Icons.person,
-                  size: 32,
+                  Icons.people_outline,
+                  size: 38,
                   color: TheColors.white,
                 ),
               ),
@@ -85,7 +86,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: const Padding(
                 padding: EdgeInsets.all(5),
                 child: Icon(
-                  Icons.question_mark,
+                  UniconsLine.comment_alt_question,
                   size: 32,
                   color: TheColors.white,
                 ),
@@ -98,7 +99,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: const Padding(
                 padding: EdgeInsets.all(5),
                 child: Icon(
-                  Icons.calendar_view_day,
+                  UniconsLine.calendar_alt,
                   size: 32,
                   color: TheColors.white,
                 ),
